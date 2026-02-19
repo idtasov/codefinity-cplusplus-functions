@@ -1,0 +1,14 @@
+#include <iostream>
+
+double calculateTax(double input) {
+    double taxRate = 0.18;
+    double tax = taxRate * input;
+    return tax;
+}
+
+int main() {
+    double salary = 1000.0;
+    std::cout << "Tax for $" << salary << ": $" 
+              << calculateTax(salary) << std::endl;
+    return 0;
+}
